@@ -9,6 +9,6 @@ service:
   pipeline:
     source:
       provider: GitHub
-      repo: myuser/banana-service
+      repo: warnergodfrey/banana-service
     build:
       image: aws/codebuild/java:openjdk-8
