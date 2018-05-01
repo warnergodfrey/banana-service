@@ -1,6 +1,5 @@
 environments:
 - name: acceptance
-- name: production
 service:
   name: banana-service
   port: 8080
@@ -12,3 +11,5 @@ service:
       repo: warnergodfrey/banana-service
     build:
       image: aws/codebuild/java:openjdk-8
+    production:
+      disabled: true
