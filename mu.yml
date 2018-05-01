@@ -5,6 +5,7 @@ service:
   port: 8080
   pathPatterns:
   - /bananas
+  - /bananas/*
   pipeline:
     source:
       provider: GitHub
