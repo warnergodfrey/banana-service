@@ -5,6 +5,8 @@ environments:
   cluster:
     desiredCapacity: 1
     sshAllow: 10.0.0.0/16
+  tags:
+    Schedule: au-office-hours
 service:
   name: banana-service
   port: 8080
