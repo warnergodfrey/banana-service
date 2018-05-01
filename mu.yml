@@ -20,3 +20,7 @@ service:
       image: aws/codebuild/java:openjdk-8
     production:
       disabled: true
+
+tags:
+  'mu-environment-acceptance':
+    Schedule: au-office-hours
