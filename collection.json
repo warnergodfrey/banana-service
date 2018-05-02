@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Bananas",
-		"_postman_id": "706d8db3-8945-bfe4-abab-d1563d76139f",
+		"_postman_id": "dbc587ee-9758-35e8-5125-d6920c363e78",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -28,7 +28,7 @@
 				}
 			],
 			"request": {
-				"url": "{{BASE_URL}}/bananas  ",
+				"url": "{{BASE_URL}}/bananas",
 				"method": "POST",
 				"header": [
 					{
@@ -59,7 +59,7 @@
 				}
 			],
 			"request": {
-				"url": "{{BASE_URL}}/bananas  ",
+				"url": "{{BASE_URL}}/bananas",
 				"method": "GET",
 				"header": [
 					{
