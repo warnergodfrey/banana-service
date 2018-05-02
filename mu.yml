@@ -5,6 +5,12 @@ environments:
   cluster:
     desiredCapacity: 1
     sshAllow: 10.0.0.0/16
+- name: production
+  loadbalancer:
+    hostedzone: aws.godfrey.io
+  cluster:
+    desiredCapacity: 1
+    sshAllow: 10.0.0.0/16
 service:
   name: banana-service
   port: 8080
@@ -16,8 +22,6 @@ service:
       repo: warnergodfrey/banana-service
     build:
       image: aws/codebuild/java:openjdk-8
-    production:
-      disabled: true
 templates:
   mu-environment-acceptance:
     Resources:
