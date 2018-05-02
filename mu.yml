@@ -17,6 +17,7 @@ environments:
     desiredCapacity: 1
 service:
   name: banana-service
+  desiredCount: 1
   port: 8080
   pathPatterns:
   - /bananas/*
