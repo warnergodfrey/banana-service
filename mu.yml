@@ -19,7 +19,6 @@ service:
   name: banana-service
   desiredCount: 1
   port: 8080
-  networkMode: host
   pathPatterns:
   - /bananas/*
   pipeline:
@@ -30,4 +29,6 @@ service:
       image: aws/codebuild/java:openjdk-8
     acceptance:
       image: aws/codebuild/eb-nodejs-4.4.6-amazonlinux-64:2.1.3
+extensions:
+- url: mu-consul-agent
 

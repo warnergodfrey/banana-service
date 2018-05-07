@@ -1,0 +1,10 @@
+---
+Resources:
+  ConsulAgentTaskDefinition:
+    Properties:
+      ContainerDefinitions:
+        Fn::Splice:
+          - 1
+          - 1
+          - - Image: 'gliderlabs/registrator:master'
+
