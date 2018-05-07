@@ -19,7 +19,7 @@ service:
   name: banana-service
   desiredCount: 1
   port: 8080
-  networkMode: default
+  networkMode: 
   pathPatterns:
   - /bananas/*
   pipeline:
