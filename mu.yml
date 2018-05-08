@@ -31,4 +31,5 @@ service:
       image: aws/codebuild/eb-nodejs-4.4.6-amazonlinux-64:2.1.3
 extensions:
 - url: https://github.com/warnergodfrey/mu-consul-agent/archive/v0.1.zip
+- url: https://github.com/warnergodfrey/mu-consul-extended-grace-period/archive/v0.1.zip
 
