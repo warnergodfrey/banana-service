@@ -59,4 +59,3 @@ Try it out:
 $ curl http://localhost:8080/bananas
 ```
 
-
