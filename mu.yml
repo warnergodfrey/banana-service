@@ -16,6 +16,8 @@ environments:
 service:
   name: banana-service
   desiredCount: 1
+  cpu: 1024
+  memory: 1024
   port: 8080
   pathPatterns:
   - /bananas/*
