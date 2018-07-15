@@ -7,6 +7,7 @@ environments:
   cluster:
     instanceType: t2.medium
     desiredCapacity: 1
+    keyName: Warner
 - name: production
   loadbalancer:
     hostedzone: aws.godfrey.io
@@ -15,6 +16,7 @@ environments:
   cluster:
     instanceType: t2.medium
     desiredCapacity: 1
+    keyName: Warner
 service:
   name: banana-service
   desiredCount: 1
