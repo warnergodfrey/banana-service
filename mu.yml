@@ -30,9 +30,6 @@ service:
       environment: test
       image: aws/codebuild/eb-nodejs-4.4.6-amazonlinux-64:2.1.3
       computeType: BUILD_GENERAL1_MEDIUM
-templates:
-  mu-service-banana-service-test:
-    ElbTargetGroup:
-      Properties:
-        HealthCheckIntervalSeconds: 5
+extensions:
+  - url: extensions/service-health-check-interval
 
