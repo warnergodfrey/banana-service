@@ -2,12 +2,16 @@ environments:
 - name: test
   loadbalancer:
     hostedzone: aws.godfrey.io
+    certificate: 20ce9f80-8d8a-4c16-a021-1355990bbebd
+    name: api.test
   cluster:
     instanceType: t2.medium
     desiredCapacity: 1
 - name: production
   loadbalancer:
     hostedzone: aws.godfrey.io
+    name: api
+    certificate: 60186e32-d159-4905-b3a3-db15d23237ec
   cluster:
     instanceType: t2.medium
     desiredCapacity: 1
