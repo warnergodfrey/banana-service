@@ -16,7 +16,6 @@ environments:
   cluster:
     instanceType: t2.medium
     desiredCapacity: 1
-    keyName: Warner
 service:
   name: banana-service
   desiredCount: 1
